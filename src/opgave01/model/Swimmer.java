@@ -64,7 +64,7 @@ public class Swimmer {
      * Return how many training hours the swimmer has each week.
      */
     public int allTrainingHours(){
-       return 0;
+       return getTrainingPlan().getWeeklyStrengthHours() + getTrainingPlan().getWeeklyWaterHours();
     }
 
 

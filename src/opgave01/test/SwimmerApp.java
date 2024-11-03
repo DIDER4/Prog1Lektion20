@@ -54,6 +54,10 @@ public class SwimmerApp {
         swimmer2.setTrainingPlan(Træningsplan1);
         swimmer3.setTrainingPlan(Træningsplan2);
 
+        for (Swimmer swimmer : swimmers){
+            System.out.println("\nSvømmer: " + swimmer.getName() + " træner i alt " + swimmer.allTrainingHours() + " Timer om ugen ");
+        }
+
     }
     
 }
