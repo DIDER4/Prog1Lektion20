@@ -2,6 +2,7 @@ package opgave01.test;
 
 import java.util.ArrayList;
 import opgave01.model.Swimmer;
+import opgave01.model.TrainingPlan;
 
 public class SwimmerApp {
     
@@ -45,6 +46,13 @@ public class SwimmerApp {
         for (Swimmer swimmer : swimmers) {
             System.out.println(swimmer.getName() + "'s bedste tid: " + swimmer.bestLapTime());
         }
+
+        TrainingPlan Træningsplan1 = new TrainingPlan('A',16,10);
+        TrainingPlan Træningsplan2 = new TrainingPlan('B',10,6);
+
+        swimmer1.setTrainingPlan(Træningsplan1);
+        swimmer2.setTrainingPlan(Træningsplan1);
+        swimmer3.setTrainingPlan(Træningsplan2);
 
     }
     

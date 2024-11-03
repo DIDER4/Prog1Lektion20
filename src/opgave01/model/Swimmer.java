@@ -10,6 +10,7 @@ public class Swimmer {
     private String club;
     private int yearGroup;
     private ArrayList<Double> lapTimes;
+    private TrainingPlan trainingPlan;
     
     /**
      * Initialize a new swimmer with name, club, yearGroup, and lap times.
@@ -49,7 +50,24 @@ public class Swimmer {
     public void setClub(String club) {
         this.club = club;
     }
-    
+
+    // Get træningsplanen for svømmeren
+    public TrainingPlan getTrainingPlan() {
+        return trainingPlan;
+    }
+
+    // set træningsplanen for svømmeren
+    public void setTrainingPlan(TrainingPlan trainingPlan) {
+        this.trainingPlan = trainingPlan;
+    }
+    /**
+     * Return how many training hours the swimmer has each week.
+     */
+    public int allTrainingHours(){
+       return 0;
+    }
+
+
     /**
      * Return the fastest lap time
      */
